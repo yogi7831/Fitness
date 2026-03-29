@@ -11,7 +11,7 @@ export default function App() {
   };
   
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-50 font-sans selection:bg-beige-500 selection:text-white flex flex-col">
+    <div className="min-h-screen bg-zinc-950 text-zinc-50 font-sans selection:bg-brown-500 selection:text-white flex flex-col">
       {/* dd1Navigationwq */}
       <nav className="sticky top-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -21,11 +21,11 @@ export default function App() {
               className="flex items-center space-x-3 cursor-pointer group"
               onClick={() => navigateTo('home')}
             >
-              <div className="bg-beige-500 p-2 rounded-lg group-hover:bg-beige-400 transition-colors">
+              <div className="bg-brown-500 p-2 rounded-lg group-hover:bg-brown-400 transition-colors">
                 <Dumbbell className="h-6 w-6 text-zinc-950" />
               </div>
               <span className="text-2xl font-bold tracking-tight text-white">
-                Apex<span className="text-beige-500">Fit</span>
+                Apex<span className="text-brown-500">Fit</span>
               </span>
             </div>
 
@@ -38,14 +38,14 @@ export default function App() {
                     onClick={() => navigateTo(page)}
                     className={`px-3 py-2 rounded-md text-sm font-medium transition-all ${
                       currentPage === page
-                        ? 'bg-zinc-800 text-beige-400'
+                        ? 'bg-zinc-800 text-brown-400'
                         : 'text-zinc-300 hover:bg-zinc-800 hover:text-white'
                     } capitalize`}
                   >
                     {page}
                   </button>
                 ))}
-                <button onClick={() => navigateTo('classes')} className="bg-beige-500 hover:bg-beige-400 text-zinc-950 px-5 py-2.5 rounded-md text-sm font-bold transition-all shadow-[0_0_15px_rgba(16,185,129,0.3)]">
+                <button onClick={() => navigateTo('classes')} className="bg-brown-500 hover:bg-brown-400 text-zinc-950 px-5 py-2.5 rounded-md text-sm font-bold transition-all shadow-[0_0_15px_rgba(16,185,129,0.3)]">
                   Join Now
                 </button>
               </div>
@@ -73,7 +73,7 @@ export default function App() {
                   onClick={() => navigateTo(page)}
                   className={`block w-full text-left px-3 py-4 rounded-md text-base font-medium ${
                     currentPage === page
-                      ? 'bg-zinc-800 text-beige-400'
+                      ? 'bg-zinc-800 text-brown-400'
                       : 'text-zinc-300 hover:bg-zinc-800 hover:text-white'
                   } capitalize`}
                 >
@@ -96,7 +96,7 @@ export default function App() {
       <footer className="bg-zinc-900 border-t border-zinc-800 py-12 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-zinc-400 text-sm">
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
-            <Dumbbell className="h-5 w-5 text-beige-500" />
+            <Dumbbell className="h-5 w-5 text-brown-500" />
             <span className="font-semibold text-zinc-300">ApexFit Studios</span>
           </div>
           <p>© 2026 ApexFit. All rights reserved. Built with React & .NET.</p>
@@ -115,7 +115,7 @@ function HomePage({ navigateTo }) {
       <div className="relative overflow-hidden">
         {/* Abstract Background Design */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-beige-600/20 rounded-full blur-3xl opacity-50 mix-blend-screen"></div>
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-brown-600/20 rounded-full blur-3xl opacity-50 mix-blend-screen"></div>
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-zinc-600/20 rounded-full blur-3xl opacity-50 mix-blend-screen"></div>
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
         </div>
@@ -123,16 +123,16 @@ function HomePage({ navigateTo }) {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32 lg:pt-32 lg:pb-40 flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 text-center lg:text-left">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6">
-              Push Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-beige-400 to-beige-500">Limits.</span><br />
+              Push Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-brown-400 to-brown-500">Limits.</span><br />
               Define Your <span className="text-white">Future.</span>
             </h1>
             <p className="mt-4 text-xl text-zinc-400 max-w-2xl mx-auto lg:mx-0 mb-10">
-              Join our premium fitness facility tailobeige for all levels. Experience world-class coaching, state-of-the-art equipment, and a community that pushes you higher.
+              Join our premium fitness facility tailobrown for all levels. Experience world-class coaching, state-of-the-art equipment, and a community that pushes you higher.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <button 
                 onClick={() => navigateTo('classes')}
-                className="bg-beige-500 hover:bg-beige-400 text-zinc-950 px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center group shadow-[0_0_20px_rgba(16,185,129,0.4)]"
+                className="bg-brown-500 hover:bg-brown-400 text-zinc-950 px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center group shadow-[0_0_20px_rgba(16,185,129,0.4)]"
               >
                 View Classes
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -150,12 +150,12 @@ function HomePage({ navigateTo }) {
           <div className="lg:w-1/2 mt-16 lg:mt-0 flex justify-center">
             <div className="relative w-full max-w-md aspect-square rounded-full border border-zinc-800 bg-zinc-900/50 flex items-center justify-center p-8 backdrop-blur-sm">
                <div className="absolute inset-4 rounded-full border border-zinc-700/50 animate-[spin_60s_linear_infinite]"></div>
-               <div className="absolute inset-12 rounded-full border border-dashed border-beige-900/50 animate-[spin_40s_linear_infinite_reverse]"></div>
-               <Activity className="w-32 h-32 text-beige-500 opacity-80" />
+               <div className="absolute inset-12 rounded-full border border-dashed border-brown-900/50 animate-[spin_40s_linear_infinite_reverse]"></div>
+               <Activity className="w-32 h-32 text-brown-500 opacity-80" />
                
                {/* Floating Stats Cards */}
                <div className="absolute top-10 -left-10 bg-zinc-800/90 backdrop-blur border border-zinc-700 p-4 rounded-xl shadow-xl flex items-center gap-3 animate-pulse">
-                  <User className="text-beige-400" />
+                  <User className="text-brown-400" />
                   <div>
                     <div className="font-bold text-xl">2.5k+</div>
                     <div className="text-xs text-zinc-400">Active Members</div>
@@ -163,7 +163,7 @@ function HomePage({ navigateTo }) {
                </div>
 
                <div className="absolute bottom-10 -right-10 bg-zinc-800/90 backdrop-blur border border-zinc-700 p-4 rounded-xl shadow-xl flex items-center gap-3">
-                  <CheckCircle className="text-beige-400" />
+                  <CheckCircle className="text-brown-400" />
                   <div>
                     <div className="font-bold text-xl">50+</div>
                     <div className="text-xs text-zinc-400">Classes Weekly</div>
@@ -226,13 +226,13 @@ function ClassesPage() {
 
       {loading ? (
         <div className="flex justify-center items-center py-20">
-          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-beige-500"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-brown-500"></div>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {classes.map((cls) => (
-            <div key={cls.id} className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-beige-500/50 transition-colors group">
-              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-beige-400 transition-colors">{cls.name}</h3>
+            <div key={cls.id} className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-brown-500/50 transition-colors group">
+              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-brown-400 transition-colors">{cls.name}</h3>
               
               <div className="space-y-3 mb-6">
                 <div className="flex items-center text-zinc-400">
@@ -249,7 +249,7 @@ function ClassesPage() {
                 </div>
               </div>
 
-              <button className="w-full bg-zinc-800 hover:bg-beige-500 hover:text-zinc-950 text-white font-medium py-3 rounded-xl transition-all">
+              <button className="w-full bg-zinc-800 hover:bg-brown-500 hover:text-zinc-950 text-white font-medium py-3 rounded-xl transition-all">
                 Book Session
               </button>
             </div>
@@ -287,7 +287,7 @@ function ContactPage() {
           <div className="space-y-8">
             <div className="flex items-start">
               <div className="bg-zinc-900 p-4 rounded-xl border border-zinc-800">
-                <Mail className="h-6 w-6 text-beige-500" />
+                <Mail className="h-6 w-6 text-brown-500" />
               </div>
               <div className="ml-4">
                 <h4 className="text-lg font-medium text-white">Email Us</h4>
@@ -297,7 +297,7 @@ function ContactPage() {
             
             <div className="flex items-start">
               <div className="bg-zinc-900 p-4 rounded-xl border border-zinc-800">
-                <Calendar className="h-6 w-6 text-beige-500" />
+                <Calendar className="h-6 w-6 text-brown-500" />
               </div>
               <div className="ml-4">
                 <h4 className="text-lg font-medium text-white">Opening Hours</h4>
@@ -315,8 +315,8 @@ function ContactPage() {
               <input 
                 type="text" 
                 id="name" 
-                requibeige
-                className="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-beige-500 focus:border-transparent transition-all"
+                requibrown
+                className="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brown-500 focus:border-transparent transition-all"
                 placeholder="John Doe"
               />
             </div>
@@ -325,8 +325,8 @@ function ContactPage() {
               <input 
                 type="email" 
                 id="email" 
-                requibeige
-                className="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-beige-500 focus:border-transparent transition-all"
+                requibrown
+                className="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brown-500 focus:border-transparent transition-all"
                 placeholder="john@example.com"
               />
             </div>
@@ -335,15 +335,15 @@ function ContactPage() {
               <textarea 
                 id="message" 
                 rows="4" 
-                requibeige
-                className="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-beige-500 focus:border-transparent transition-all resize-none"
+                requibrown
+                className="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-brown-500 focus:border-transparent transition-all resize-none"
                 placeholder="How can we help you achieve your goals?"
               ></textarea>
             </div>
             <button 
               type="submit" 
               disabled={formStatus === 'submitting'}
-              className="w-full bg-beige-500 hover:bg-beige-400 text-zinc-950 font-bold py-4 rounded-xl transition-all disabled:opacity-70 flex items-center justify-center"
+              className="w-full bg-brown-500 hover:bg-brown-400 text-zinc-950 font-bold py-4 rounded-xl transition-all disabled:opacity-70 flex items-center justify-center"
             >
               {formStatus === 'submitting' ? (
                 <span className="flex items-center">
